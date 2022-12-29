@@ -1,0 +1,22 @@
+.logo {
+	border-radius: 100%;
+}
+
+.nav-item {
+	text-decoration: none;
+}
+
+li a:hover {
+	border-bottom: 1px solid white;
+}
+
+#banner {
+	height: 100vh;
+	background-image: url('images/wallpaper.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 110%;
+}
+
+#songs {
+	background-color: black;
+}

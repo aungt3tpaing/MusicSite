@@ -1,26 +1,172 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>KeeY Music Player</title>
 
 	<!-- This is Bootstrap cdn link css-->
 	<link rel="icon" type="image" href="images/logo.jpg">
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
 <!-- This is fontawesome link -->
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--This is external css file-->
+<link rel="stylesheet" type="text/css" href="index.css">
+
 </head>
 <body>
 
-<!-- This is nav -->
-<nav class="container-fluid	">
-</nav>
+
+<div class="bg-dark fixed-top navbar">
+
+		<a href="inex.html" class="navbar-brand mx-3">
+			<img src="images/logo.jpg" width="50px" height="45px;" class="logo" alt="KeeY-logo">
+			<span class="ms-3 text-light">KeeY Music player</span>
+	    </a>
+
+	    <button type="button"><i class="fa-solid fa-bars"></i></button>
+<!--
+	<div class="navbar-collapse" id="nav">
+		<ul class="navbar-nav">
+			<li class="nav-item"><a href="#home" class="nav-link text-light">Home</a></li>
+			<li class="nav-item"><a href="#home" class="nav-link text-light">Songs</a></li>
+			<li class="nav-item"><a href="#home" class="nav-link text-light">Musical Artists</a></li>
+			<li class="nav-item"><a href="#home" class="nav-link text-light">Youtube</a></li>
+			<li class="nav-item"><a href="#home" class="nav-link text-light">Contact</a></li>
+		</ul>
+	</div>
+-->
+
+</div>
+
+
+<!-- banner Section-->
+
+<div class="container-fluid d-flex justify-content-center 		align-items-center" id="banner">
+	<div class="text-light fw-blod fs-1 text-center">
+		<h1 class="mb-3">I Hope You like</h1>
+		<p class="mb-3">Now, You can listen here</p>
+		<button type="button" class="btn btn-outline-dark">Listen</button>
+	</div>
+</div>
+
+<!--end banner Section-->
+
+<!--start Song Section-->
+<div class="bg-dark" id="songs">
+	<div class="text-light text-center">
+		<h1 class="mb-3 pt-5">MUSIC SECTION</h1>
+	</div>
+
+	<div class="ps-3">
+			<small class="text-light fs-3 border-bottom border-light rounded" id="artists">Recommand Songs</small>
+
+			<!--Songs Cards-->
+			<div class="row mt-4">
+
+				<div class="col-lg-3 mb-4">
+					<div class="card">
+
+						<div class="card-body bg-success text-center text-light">
+							<p>Songname - Flashlight</p>
+							<p>Artist - Jessie J</p>
+							<a href="https://g.co/kgs/DiWgZd">
+								<button type="button" class="btn btn-light">More About</button>
+							</a>
+						</div>
+						<div class="card-footer px-2">
+							<audio controls src="audio/Flashlight.mp3">
+							</audio>
+							<p class="float-start mt-2">Youtube</p>
+							<a href="" class="fs-3 text-danger float-end pt-1"><i class="fa-brands fa-youtube"></i></a>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-11 mb-4">
+					<div class="card">
+
+						<div class="card-body bg-success text-center text-light">
+							<p>Songname - How To Fall In Love</p>
+							<p>Artist - Linda Elsener</p>
+							<a href="https://g.co/kgs/DiWgZd">
+								<button type="button" class="btn btn-light">More About</button>
+							</a>
+						</div>
+						<div class="card-footer px-2">
+							<audio controls src="audio/fallinlove.mp3">
+
+							</audio>
+
+							<p class="float-start mt-1">Youtube</p>
+							<a href="" class="fs-3 text-danger float-end"><i class="fa-brands fa-youtube"></i></a>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-12 mb-4">
+					<div class="card">
+
+						<div class="card-body bg-success text-center text-light">
+							<p>Songname - Ghost</p>
+							<p>Artist - Justin Bieber</p>
+							<a href="https://g.co/kgs/DiWgZd">
+								<button type="button" class="btn btn-light">More About</button>
+							</a>
+						</div>
+						<div class="card-footer px-2">
+							<audio controls src="audio/ghost.m4a">
+
+							</audio>
+
+							<p class="float-start mt-1">Youtube</p>
+							<a href="" class="fs-3 text-danger float-end"><i class="fa-brands fa-youtube"></i></a>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="col-lg-3 col-sm-12 mb-4">
+					<div class="card">
+
+						<div class="card-body bg-success text-center text-light">
+							<p>Songname - Control</p>
+							<p>Artist - Zoe Wees</p>
+							<a href="https://g.co/kgs/DiWgZd">
+								<button type="button" class="btn btn-light">More About</button>
+							</a>
+						</div>
+						<div class="card-footer px-2">
+							<audio controls src="audio/control.mp3">
+
+							</audio>
+
+							<p class="float-start mt-1">Youtube</p>
+							<a href="" class="fs-3 text-danger float-end"><i class="fa-brands fa-youtube"></i></a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+<!--End Song Secton-->
+
+<!--Artists Section-->
 
 
 
-<!-- This is Bootstrap cdn link Js-->
+<!--End Section-->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
