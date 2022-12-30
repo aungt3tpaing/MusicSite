@@ -24,10 +24,42 @@ li a:hover {
 	height: 100vh;
 	background-image: url('images/wallpaper.jpg');
 	background-repeat: no-repeat;
-	background-size: 100% 110%;
+	background-size: 100% 100%;
 }
 
+#songs {
+	background-image: url('images/wall.webp');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
 
+.search {
+	background-color: transparent;
+	border: 2px solid lightseagreen;
+	border-radius: 50px;
+	outline: none;
+}
+
+.play {
+	height: 300px;
+	overflow-y: scroll;
+}
+
+/*
+.paly-container {
+	overflow-y: scroll;
+}
+*/
+
+.play-row {
+	border-radius: 20px;
+	
+	background-color: #0f172a;
+}
+
+.artist-photo {
+	width: 50px;
+}
 
 
 #artists {
